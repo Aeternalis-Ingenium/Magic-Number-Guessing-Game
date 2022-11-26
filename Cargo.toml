@@ -1,8 +1,12 @@
 [package]
 name = "magical_guessing_game"
 version = "0.1.0"
+rust-version = "1.65"
+description = "A guessing game that let 1 player guess a number each turn until the guess or correct or the chances run out."
+authors = ["Ma6icFin6erz <magicfingerz@proton.me>"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+rand = "0.8.5"
