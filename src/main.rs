@@ -10,17 +10,28 @@ fn main() {
     println!("3 for hard");
     println!("4 for hardcore!");
 
-    let mut difficulty: String = String::new();
+    let difficulty: u8;
     let mut chances: u8;
 
-    std::io::stdin()
-                .read_line(&mut difficulty)
-                .expect("Failed to read line");
+    loop {
+        let mut difficulty_option: String = String::new();
 
-    let difficulty: u8 = match difficulty.trim().parse() {
-        Ok(num) => num,
-        Err(_) => return,
-    };
+        std::io::stdin()
+                    .read_line(&mut difficulty_option)
+                    .expect("Failed to read line");
+
+        let difficulty_as_int: u8 = match difficulty_option.trim().parse() {
+            Ok(num) => num,
+            Err(_) => continue
+        };
+
+        if difficulty_as_int > 4 {
+            println!("Please choose only between difficulty 1, 2, 3, or 4!");
+        } else {
+            difficulty = difficulty_as_int;
+            break;
+        }
+    }
 
     if difficulty == 1 {
         chances = 13;
@@ -46,6 +57,13 @@ fn main() {
             Ok(num) => num,
             Err(_) => continue,
         };
+    
+        if (guess >= 1) && (guess <= 100) {
+            println!("Your guess {guess}");
+        } else {
+            println!("Remember, the number must be between 0 and 100!!");
+            continue;
+        }
 
         match guess.cmp(&magic_number) {
             std::cmp::Ordering::Less => println!("Too small! {chances} chances left!"),
