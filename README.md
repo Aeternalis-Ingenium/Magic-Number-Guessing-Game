@@ -10,7 +10,8 @@ This is a game where you can challenge your guessing instinct. The game is imple
     * 2 for normal $\rightarrow$ 10 Guessesing Chances
     * 3 for hard $\rightarrow$ 7 Guessesing Chances
     * 4 for hardcore $\rightarrow$ 3 Guessesing Chances
-
+* Choosing difficulty number that is greater than 4 will result in a loop of prompt for the number until the guess is between 1 and 4.
+* Guessing the magic number greater than 100 will result in a loop of prompt for the number until the guess is between 1 and 100.
 * Win $\rightarrow$ Whenever the magic number is guessed within the above chances
 * Lost $\rightarrow$ Whenever the chances run out!
 
