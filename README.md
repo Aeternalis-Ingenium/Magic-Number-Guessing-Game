@@ -1,4 +1,4 @@
-<h1 align=center><strong>Magic Number Guessing Game</strong></h1>
+<h1 align=center><strong>Guessing Magic Number</strong></h1>
 
 ---
 
