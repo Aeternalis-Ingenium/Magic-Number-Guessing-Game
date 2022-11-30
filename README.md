@@ -1,4 +1,4 @@
-<h1 align=center><strong>Guessing Magic Number</strong></h1>
+<h1 align=center><strong>Magic Number Guessing Game</strong></h1>
 
 ---
 
@@ -21,8 +21,8 @@ This is a game where you can challenge your guessing instinct. The game is imple
 
 1. Clone the repository
 
-    * SSH: `git@github.com:Ma6icFin6erz/Magic-Number-Guessing-Game.git`
-    * HTTPS: `https://github.com/Ma6icFin6erz/Magic-Number-Guessing-Game.git`
+    * SSH: `git@github.com:N-tropy/Magic-Number-Guessing-Game.git`
+    * HTTPS: `https://github.com/N-tropy/Magic-Number-Guessing-Game.git`
 
 <br>
 
